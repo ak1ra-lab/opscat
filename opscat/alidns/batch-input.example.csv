@@ -1,0 +1,4 @@
+action,domain,type,record,line,value,priority,ttl,status,remark
+add,example.com,A,alidns,default,1.1.1.1,1,600,Enable,alidns add A record example
+update,example.com,CNAME,alidns,default,alidns.example.com.cdn.dnsv1.com,1,600,Enable,alidns update CNAME record example
+delete,example.com,CNAME,alidns,default,alidns.example.com.cdn.dnsv1.com,1,600,Enable,alidns update CNAME record example
