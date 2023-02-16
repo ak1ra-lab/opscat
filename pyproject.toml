@@ -8,6 +8,8 @@ authors = [
     {name = "ak1ra-lab", email = "git@ak1ra.xyz"},
 ]
 dependencies = [
+    "aliyun-python-sdk-core",
+    "aliyun-python-sdk-alidns",
     "httpx"
 ]
 requires-python = ">=3.9"
@@ -45,6 +47,7 @@ test = [
 Source = "https://github.com/ak1ra-lab/opscat"
 
 [project.scripts]
+alidns = "opscat.alidns.alidns:main"
 
 [tool.black]
 line-length = 120
