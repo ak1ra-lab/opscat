@@ -1,0 +1,58 @@
+[build-system]
+requires = ["flit_core>=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "opscat"
+authors = [
+    {name = "ak1ra-lab", email = "git@ak1ra.xyz"},
+]
+dependencies = [
+    "httpx"
+]
+requires-python = ">=3.9"
+readme = "README.md"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Communications :: File Sharing",
+    "Topic :: System :: Shells",
+]
+dynamic = [
+    "version",
+    "description",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "coverage",
+    "diff-cover",
+    "flake8",
+    "isort",
+    "pre-commit",
+    "pytest>=2.7.3",
+]
+test = [
+    "tox",
+]
+
+[project.urls]
+Source = "https://github.com/ak1ra-lab/opscat"
+
+[project.scripts]
+
+[tool.black]
+line-length = 120
+target-version = ['py39']
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 120
+lines_after_imports = 2
+skip = [".tox", ".venv"]
