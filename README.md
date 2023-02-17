@@ -26,6 +26,10 @@ python3 -m pip --update pip && pip install .
 
 执行 `tls-secret-helper --help` 查看使用帮助, 或者查看 [README for tls-secret-helper](opscat/tls_secret_helper/README.md)
 
+## [etcdadm-secret-helper.sh](scripts/etcdadm-cert-helper/etcdadm-cert-helper.sh)
+
+查看 [README for etcdadm-secret-helper.sh](scripts/etcdadm-cert-helper/README.md) 获取详细帮助
+
 ## TODO
 
 * [ ] 目前收录的脚本大多为单文件可执行脚本, 之后考虑拆分为不同模块的多文件.
