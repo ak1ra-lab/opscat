@@ -30,6 +30,10 @@ python3 -m pip --update pip && pip install .
 
 查看 [README for etcdadm-secret-helper.sh](scripts/etcdadm-cert-helper/README.md) 获取详细帮助
 
+## [tls-selfsigned-cert.sh](scripts/tls-selfsigned-cert/tls-selfsigned-cert.sh)
+
+使用 [cloudflare/cfssl](https://github.com/cloudflare/cfssl) 快速创建自签名 CA 和用该 CA 签名的证书
+
 ## TODO
 
 * [ ] 目前收录的脚本大多为单文件可执行脚本, 之后考虑拆分为不同模块的多文件.
