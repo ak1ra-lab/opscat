@@ -10,7 +10,8 @@ authors = [
 dependencies = [
     "aliyun-python-sdk-core",
     "aliyun-python-sdk-alidns",
-    "httpx"
+    "httpx",
+    "cryptography"
 ]
 requires-python = ">=3.9"
 readme = "README.md"
@@ -48,6 +49,7 @@ Source = "https://github.com/ak1ra-lab/opscat"
 
 [project.scripts]
 alidns = "opscat.alidns.alidns:main"
+tls-secret-helper = "opscat.tls_secret_helper.tls_secret_helper:main"
 
 [tool.black]
 line-length = 120

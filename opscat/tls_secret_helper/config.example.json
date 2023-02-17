@@ -1,0 +1,10 @@
+{
+    "example-k8s-test.conf": [
+        "example-test.com",
+        "example-test.net"
+    ],
+    "example-k8s-prod.conf": [
+        "example.com",
+        "example.net"
+    ]
+}
