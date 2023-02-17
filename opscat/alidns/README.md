@@ -1,6 +1,22 @@
 
 # README for alidns.py
 
+## 配置文件
+
+可通过 `-c` 或 `--config` 选项指定配置文件位置, 在不指定此选项时, 默认读取 `~/.config/opscat/alidns/config.json` 文件, 默认位置配置文件不存在时还可以设置环境变量 `ACS_ACCESS_KEY`, `ACS_SECRET`, `ACS_REGION` 传递 `ak`, `secret`, `region` 值, 二者必须至少设置一种.
+
+配置文件的格式为:
+
+```json
+{
+    "ak": "xxxx",
+    "secret": "xxxx",
+    "region": "cn-hangzhou"
+}
+```
+
+> [首页>新手上云指南>访问并使用云产品>地域和可用区](https://www.alibabacloud.com/help/zh/basics-for-beginners/latest/regions-and-zones)
+
 ## 基本用法
 
 * 查询某域名下所有记录: `alidns -d example.com -a search`

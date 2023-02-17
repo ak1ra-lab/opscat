@@ -95,8 +95,11 @@ def csv_to_kv_list(csv_file, headers=[], sep=","):
 
 
 def init_client(config_file):
-    with open(os.path.expanduser(config_file), encoding="utf-8") as f:
-        config = json.loads(f.read())
+    try:
+        with open(os.path.expanduser(config_file), encoding="utf-8") as f:
+            config = json.loads(f.read())
+    except IOError:
+            config = {}
     ak = os.environ.get("ACS_ACCESS_KEY") or config.get("ak")
     secret = os.environ.get("ACS_SECRET") or config.get("secret")
     region = os.environ.get("ACS_REGION") or config.get("region")
