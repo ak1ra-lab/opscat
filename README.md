@@ -26,6 +26,11 @@ python3 -m pip --update pip && pip install .
 
 执行 `tls-secret-helper --help` 查看使用帮助, 或者查看 [README for tls-secret-helper](opscat/tls_secret_helper/README.md)
 
+---
+# shell scripts
+
+[scripts/](scripts/) 目录下收录的为一些 Bash 脚本, 具体使用方法参考各目录下的 README.md
+
 ## [etcdadm-secret-helper.sh](scripts/etcdadm-cert-helper/etcdadm-cert-helper.sh)
 
 查看 [README for etcdadm-secret-helper.sh](scripts/etcdadm-cert-helper/README.md) 获取详细帮助
@@ -34,6 +39,11 @@ python3 -m pip --update pip && pip install .
 
 使用 [cloudflare/cfssl](https://github.com/cloudflare/cfssl) 快速创建自签名 CA 和用该 CA 签名的证书
 
-## TODO
+## [scripts/k8s/](scripts/k8s/)
+
+查看 [README for scripts/k8s/*](scripts/k8s/README.md) 获取详细帮助
+
+---
+# TODO
 
 * [ ] 目前收录的脚本大多为单文件可执行脚本, 之后考虑拆分为不同模块的多文件.
